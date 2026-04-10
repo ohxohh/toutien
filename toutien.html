@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="zh-Hant"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;賴清德，我是不會屈服的！&lt;/title&gt;</p>
+<p class="p1">&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">body { background-color: #f5f2ec; font-family: sans-serif; color: #3b3a36; }</p>
+<p class="p1">.high-bp { font-weight: bold; color: #c75c4c; } <span class="Apple-converted-space"> </span></p>
+<p class="p1">.morning { color: #d38b3b; font-weight: bold; } <span class="Apple-converted-space"> </span></p>
+<p class="p1">.evening { color: #3b4f6b; font-weight: bold; } <span class="Apple-converted-space"> </span></p>
+<p class="p1">.migraine { color: #5c3a5d; font-weight: bold; }<span class="Apple-converted-space"> </span></p>
+<p class="p1">.delete-btn { cursor:pointer; color:#c75c4c; font-size:10px; text-center; }</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="p-4"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="max-w-md mx-auto bg-[#ede6dc] rounded-3xl shadow-xl border border-[#cfc4b2]"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="bg-[#a79d8f] p-6 text-white text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1 class="text-2xl font-black italic"&gt;賴清德，我是不會屈服的！&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="text-xs mt-2 font-medium"&gt;透天最高健康寶寶&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 輸入區 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="p-4 bg-[#f0ede7] border-b"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="flex gap-2 mb-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;select id="t" class="w-1/3 p-2 rounded-xl border-2 border-[#cfc4b2] bg-white text-sm font-bold focus:border-[#a79d8f] outline-none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;option&gt;早上&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;option&gt;晚上&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;option&gt;偏頭痛&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="number" id="w" step="0.1" placeholder="體重 kg" class="w-2/3 p-2 rounded-xl border-2 border-[#cfc4b2] focus:border-[#a79d8f] outline-none text-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="flex gap-2 mb-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="number" id="s" placeholder="高壓(收縮)" class="w-1/2 p-2 rounded-xl border-2 border-[#cfc4b2] focus:border-[#a79d8f] outline-none text-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="number" id="d" placeholder="低壓(舒張)" class="w-1/2 p-2 rounded-xl border-2 border-[#cfc4b2] focus:border-[#a79d8f] outline-none text-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="text" id="n" placeholder="備註 (如：吹風、閃光、已服藥)" class="w-full p-2 rounded-xl border-2 border-[#cfc4b2] focus:border-[#a79d8f] outline-none text-sm mb-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="save()" class="w-full bg-[#8b7765] hover:bg-[#7a6a57] text-white font-black py-3 rounded-2xl shadow-lg active:scale-95 transition-all"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>紀錄數據</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 圖表區 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;canvas id="weightChart" height="150" class="mb-4"&gt;&lt;/canvas&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;canvas id="bpChart" height="150"&gt;&lt;/canvas&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 紀錄列表 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="p-4 space-y-2" id="list"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">function save() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const s = parseInt(document.getElementById('s').value),</p>
+<p class="p1"><span class="Apple-converted-space">          </span>d = parseInt(document.getElementById('d').value),</p>
+<p class="p1"><span class="Apple-converted-space">          </span>w = document.getElementById('w').value,</p>
+<p class="p1"><span class="Apple-converted-space">          </span>t = document.getElementById('t').value,</p>
+<p class="p1"><span class="Apple-converted-space">          </span>n = document.getElementById('n').value;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>if(!s || !d || !w) return alert('數據填完整才行！');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const dateStr = (new Date().getMonth()+1)+'/'+new Date().getDate();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let logs = JSON.parse(localStorage.getItem('p_battle_final') || '[]');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if(logs.find(l =&gt; l.date===dateStr &amp;&amp; l.t===t)) return alert('今天這個時段已紀錄過囉！');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const entry = { date: dateStr, t, w, s, d, n, ts: new Date().getTime() };</p>
+<p class="p1"><span class="Apple-converted-space">    </span>logs.unshift(entry);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>localStorage.setItem('p_battle_final', JSON.stringify(logs));</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('s').value='';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('d').value='';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('w').value='';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('n').value='';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>render();</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function render() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const logs = JSON.parse(localStorage.getItem('p_battle_final') || '[]');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const container = document.getElementById('list');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const groups = {};</p>
+<p class="p1"><span class="Apple-converted-space">    </span>logs.forEach(l =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if(!groups[l.date]) groups[l.date] = [];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>groups[l.date].push(l);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>container.innerHTML = Object.keys(groups).map(date=&gt;`</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="border-2 border-[#cfc4b2] rounded-3xl overflow-hidden shadow-sm bg-[#f0ede7]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-[#e2ddcf] px-3 py-1 font-black text-gray-600 text-xs tracking-widest border-b"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>📅 日期：${date}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="divide-y divide-[#cfc4b2]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>${groups[date].sort((a,b)=&gt;a.ts-b.ts).map(l=&gt;`</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="p-2 grid grid-cols-12 items-center gap-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="col-span-3 text-sm ${l.t==='早上'?'morning':l.t==='晚上'?'evening':'migraine'}"&gt;${l.t}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="col-span-3 text-sm font-medium text-gray-700"&gt;${l.w}kg&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="col-span-3 text-sm ${l.s &gt;= 115 || l.d &gt;= 90 ? 'high-bp' : 'text-gray-700'}"&gt;${l.s}/${l.d}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="col-span-2 text-sm text-gray-400 italic"&gt;${l.n||''}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="col-span-1 flex justify-center items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                          </span>&lt;span class="delete-btn" onclick="deleteEntry(${l.ts})"&gt;刪除&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>`).join('')}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>`).join('');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>drawCharts(logs);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function deleteEntry(ts){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if(!confirm('你確定要刪除此筆紀錄嗎？請 double check！')) return;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let logs = JSON.parse(localStorage.getItem('p_battle_final') || '[]');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>logs = logs.filter(l=&gt;l.ts!==ts);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>localStorage.setItem('p_battle_final', JSON.stringify(logs));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>render();</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">// Chart.js 繪圖</p>
+<p class="p1">let weightChart, bpChart;</p>
+<p class="p1">function drawCharts(logs){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const dates = logs.map(l =&gt; l.date).reverse();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const weightData = logs.map(l =&gt; parseFloat(l.w)).reverse();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const sData = logs.map(l =&gt; l.s).reverse();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const dData = logs.map(l =&gt; l.d).reverse();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const weightCtx = document.getElementById('weightChart').getContext('2d');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const bpCtx = document.getElementById('bpChart').getContext('2d');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>if(weightChart) weightChart.destroy();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if(bpChart) bpChart.destroy();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>weightChart = new Chart(weightCtx, {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>type:'line',</p>
+<p class="p1"><span class="Apple-converted-space">        </span>data:{ labels: dates, datasets:[{label:'體重(kg)', data:weightData, borderColor:'#7a6a57', backgroundColor:'#7a6a5733', fill:true, tension:0.3}] },</p>
+<p class="p1"><span class="Apple-converted-space">        </span>options:{ scales:{y:{beginAtZero:false}} }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>bpChart = new Chart(bpCtx, {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>type:'line',</p>
+<p class="p1"><span class="Apple-converted-space">        </span>data:{</p>
+<p class="p1"><span class="Apple-converted-space">            </span>labels: dates,</p>
+<p class="p1"><span class="Apple-converted-space">            </span>datasets:[</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{label:'收縮壓', data:sData, borderColor:'#3b4f6b', backgroundColor:'#3b4f6b33', tension:0.3},</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{label:'舒張壓', data:dData, borderColor:'#d38b3b', backgroundColor:'#d38b3b33', tension:0.3}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>]</p>
+<p class="p1"><span class="Apple-converted-space">        </span>},</p>
+<p class="p1"><span class="Apple-converted-space">        </span>options:{ scales:{y:{beginAtZero:false}} }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">render();</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
